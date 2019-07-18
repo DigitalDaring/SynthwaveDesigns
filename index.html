@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Synthwave</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <style>
+            synthwave-card {
+                --vapor-theme-font: 'Lato', sans-serif;
+                max-width: 280px;
+            }
+
+            section.cards {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-around;
+            }
+        </style>
+        <script src="./synthwave-card.ts"></script>
+    </head>
+    <body>
+        <section class="cards">
+            <synthwave-card>
+                <h1 slot="title">Synthwave</h1>
+                <p slot="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <button slot="actions">
+                    Woot!
+                </button>
+            </synthwave-card>
+
+            <synthwave-card>
+                <img src="https://picsum.photos/200/300" slot="image"/>
+                <h1 slot="title">Synthwave</h1>
+                <p slot="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button slot="actions">
+                    Woot!
+                </button>
+            </synthwave-card>
+        </section>
+    </body>
+</html>
