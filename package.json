@@ -4,7 +4,7 @@
   "description": "synthwave asthetic",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel build index.html && node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Edmund Bates",
@@ -13,6 +13,7 @@
     "typescript": "^3.5.3"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "parcel-bundler": "^1.12.3"
   }
 }
